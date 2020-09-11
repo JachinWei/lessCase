@@ -1,18 +1,33 @@
-# lessCase
-collect some useful case of less
+## lessCase
 
-# less Web Site
-url: https://less.bootcss.com/
+收集关于less的资料
 
-# node_modules: less
-## install
+## 参考资料
+
+[官网链接](https://less.bootcss.com/)
+
+## less模块
+
+### 安装
+
 yarn global add less
-## translate less file to css file
-lessc [option option=parameter ...] <source> [destination]
-eg: lessc bootstrap.less bootstrap.css
 
-# use less
-## add less.js to parse less file
+### less转css
+
+lessc [option option=parameter ...] <source> [destination]
+
+> cd less
+>
+> lessc my.less my.css
+
+## less不同场景用法
+
+### html
+
+```html
+<!-- add less.js into html, required -->
 <script src="less.js" type="text/javascript"></script>
-## 
+
+<!-- add your less file into html -->
 <link rel="stylesheet/less" type="text/css" href="styles.less" />
+```
