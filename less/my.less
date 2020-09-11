@@ -1,7 +1,46 @@
-@width: 10px;
-@height: @width + 10px;
+@import "./var";
 
+
+// 1. 使用变量
 #header {
   width: @width;
   height: @height;
 }
+
+// 2. 混合
+.center {
+  text-align: center;
+}
+
+.title {
+  color: #FFF;
+  .center();
+  #header();
+}
+
+// 3. 嵌套
+#nav {
+  color: black;
+  .navigation {
+    font-size: 12px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+// 
